@@ -14,6 +14,7 @@
 		465970021BF3F4CA000217DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465970001BF3F4CA000217DE /* LaunchScreen.storyboard */; };
 		4659700D1BF3F4CA000217DE /* oxkcdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659700C1BF3F4CA000217DE /* oxkcdTests.swift */; };
 		465970181BF3F4CA000217DE /* oxkcdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465970171BF3F4CA000217DE /* oxkcdUITests.swift */; };
+		465970291BF73F67000217DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465970281BF73F67000217DE /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		465970131BF3F4CA000217DE /* oxkcdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oxkcdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465970171BF3F4CA000217DE /* oxkcdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oxkcdUITests.swift; sourceTree = "<group>"; };
 		465970191BF3F4CA000217DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465970281BF73F67000217DE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465970291BF73F67000217DE /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 		46596FF61BF3F4CA000217DE /* oxkcd */ = {
 			isa = PBXGroup;
 			children = (
+				465970261BF73EC4000217DE /* Network */,
 				46596FF71BF3F4CA000217DE /* AppDelegate.swift */,
 				46596FF91BF3F4CA000217DE /* ViewController.swift */,
 				46596FFB1BF3F4CA000217DE /* Main.storyboard */,
@@ -123,6 +127,22 @@
 				465970191BF3F4CA000217DE /* Info.plist */,
 			);
 			path = oxkcdUITests;
+			sourceTree = "<group>";
+		};
+		465970261BF73EC4000217DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				465970271BF73EE3000217DE /* Alamofire */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		465970271BF73EE3000217DE /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				465970281BF73F67000217DE /* Alamofire.framework */,
+			);
+			name = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +419,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd",
+				);
 				INFOPLIST_FILE = oxkcd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcd;
@@ -410,6 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd",
+				);
 				INFOPLIST_FILE = oxkcd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcd;
