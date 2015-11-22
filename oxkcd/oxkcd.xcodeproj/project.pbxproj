@@ -14,7 +14,11 @@
 		465970021BF3F4CA000217DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465970001BF3F4CA000217DE /* LaunchScreen.storyboard */; };
 		4659700D1BF3F4CA000217DE /* oxkcdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659700C1BF3F4CA000217DE /* oxkcdTests.swift */; };
 		465970181BF3F4CA000217DE /* oxkcdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465970171BF3F4CA000217DE /* oxkcdUITests.swift */; };
-		465970291BF73F67000217DE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465970281BF73F67000217DE /* Alamofire.framework */; };
+		46C2B3171C0283EE00076E43 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2B3161C0283EE00076E43 /* Alamofire.framework */; };
+		46C2B3201C02876B00076E43 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46C2B31F1C02876B00076E43 /* Alamofire.framework.dSYM */; };
+		46C2B3211C02881800076E43 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2B3161C0283EE00076E43 /* Alamofire.framework */; };
+		46C2B3221C02881C00076E43 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2B3161C0283EE00076E43 /* Alamofire.framework */; };
+		46C2B3261C0288EF00076E43 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46C2B3161C0283EE00076E43 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46C2B31E1C02875B00076E43 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				46C2B3201C02876B00076E43 /* Alamofire.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C2B3251C0288E300076E43 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46C2B3261C0288EF00076E43 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		46596FF41BF3F4CA000217DE /* oxkcd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oxkcd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46596FF71BF3F4CA000217DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +75,8 @@
 		465970131BF3F4CA000217DE /* oxkcdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oxkcdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465970171BF3F4CA000217DE /* oxkcdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oxkcdUITests.swift; sourceTree = "<group>"; };
 		465970191BF3F4CA000217DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		465970281BF73F67000217DE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		46C2B3161C0283EE00076E43 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Network/Alamofire.framework; sourceTree = "<group>"; };
+		46C2B31F1C02876B00076E43 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Network/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				465970291BF73F67000217DE /* Alamofire.framework in Frameworks */,
+				46C2B3171C0283EE00076E43 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C2B3211C02881800076E43 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C2B3221C02881C00076E43 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +130,8 @@
 		46596FF61BF3F4CA000217DE /* oxkcd */ = {
 			isa = PBXGroup;
 			children = (
-				465970261BF73EC4000217DE /* Network */,
+				46C2B31C1C0286E800076E43 /* Supporting Files */,
+				46C2B3181C0283F300076E43 /* Network */,
 				46596FF71BF3F4CA000217DE /* AppDelegate.swift */,
 				46596FF91BF3F4CA000217DE /* ViewController.swift */,
 				46596FFB1BF3F4CA000217DE /* Main.storyboard */,
@@ -129,20 +160,20 @@
 			path = oxkcdUITests;
 			sourceTree = "<group>";
 		};
-		465970261BF73EC4000217DE /* Network */ = {
+		46C2B3181C0283F300076E43 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				465970271BF73EE3000217DE /* Alamofire */,
+				46C2B3161C0283EE00076E43 /* Alamofire.framework */,
 			);
 			name = Network;
 			sourceTree = "<group>";
 		};
-		465970271BF73EE3000217DE /* Alamofire */ = {
+		46C2B31C1C0286E800076E43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				465970281BF73F67000217DE /* Alamofire.framework */,
+				46C2B31F1C02876B00076E43 /* Alamofire.framework.dSYM */,
 			);
-			name = Alamofire;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +186,8 @@
 				46596FF01BF3F4CA000217DE /* Sources */,
 				46596FF11BF3F4CA000217DE /* Frameworks */,
 				46596FF21BF3F4CA000217DE /* Resources */,
+				46C2B31B1C0285F600076E43 /* ShellScript */,
+				46C2B31E1C02875B00076E43 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -190,6 +223,7 @@
 				4659700F1BF3F4CA000217DE /* Sources */,
 				465970101BF3F4CA000217DE /* Frameworks */,
 				465970111BF3F4CA000217DE /* Resources */,
+				46C2B3251C0288E300076E43 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -270,6 +304,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46C2B31B1C0285F600076E43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/oxkcd/Network/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46596FF01BF3F4CA000217DE /* Sources */ = {
@@ -421,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/oxkcd",
+					"$(PROJECT_DIR)/oxkcd/Network",
 				);
 				INFOPLIST_FILE = oxkcd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/oxkcd",
+					"$(PROJECT_DIR)/oxkcd/Network",
 				);
 				INFOPLIST_FILE = oxkcd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,6 +500,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd/Network",
+				);
 				INFOPLIST_FILE = oxkcdTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcdTests;
@@ -461,6 +516,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd/Network",
+				);
 				INFOPLIST_FILE = oxkcdTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcdTests;
@@ -472,6 +531,10 @@
 		465970231BF3F4CA000217DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd/Network",
+				);
 				INFOPLIST_FILE = oxkcdUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcdUITests;
@@ -484,6 +547,10 @@
 		465970241BF3F4CA000217DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oxkcd/Network",
+				);
 				INFOPLIST_FILE = oxkcdUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openguins.oxkcdUITests;
@@ -512,6 +579,7 @@
 				4659701E1BF3F4CA000217DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4659701F1BF3F4CA000217DE /* Build configuration list for PBXNativeTarget "oxkcdTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +588,7 @@
 				465970211BF3F4CA000217DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465970221BF3F4CA000217DE /* Build configuration list for PBXNativeTarget "oxkcdUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +597,7 @@
 				465970241BF3F4CA000217DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
